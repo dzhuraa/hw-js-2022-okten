@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.product-card{
+    width: 20rem;
+}
+.product-title{
+    text-align: center;
+}
+.product-image{
+    width: 100%;
+    height: 22rem;
+}
