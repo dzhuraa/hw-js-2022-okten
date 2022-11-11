@@ -131,21 +131,21 @@
 //     {name: 'olya', age: 31, status: false},
 //     {name: 'max', age: 31, status: true}
 // ]
-
+//
 // for (let i = 0; i < users.length; i++) {
 //     const user = users[i];
 //     if (user.status === true){
 //         document.write(`<h2>${user.name}</h2>`)
 //     }
 // }
-
+//
 // for (let i = 0; i < users.length; i++) {
 //     const user = users[i];
 //     if (!user.status === true){
 //         document.write(`<h2>${user.name}</h2>`)
 //     }
 // }
-
+//
 // for (let i = 0; i < users.length; i++) {
 //     const user = users[i];
 //     if (user.age > 30){
