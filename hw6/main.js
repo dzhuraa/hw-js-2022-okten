@@ -175,8 +175,47 @@
 //     value: '', // '6'-'10', 'ace','jack','queen','king','joker'
 //     color:'', // 'red','black'
 // }
+
+
+
+
+// deckOfCards = [
+//     {cardSuit: 'spade', value: '10', color: 'black', valueWeight: 10},
+//     {cardSuit: 'clubs', value: 'king', color: 'black', valueWeight: 13},
+//     {cardSuit: 'clubs', value: '6', color: 'black', valueWeight: 6},
+//     {cardSuit: 'heart', value: 'jack', color: 'red', valueWeight: 11},
+//     {cardSuit: 'diamond', value: '7', color: 'red', valueWeight: 7},
+//     {cardSuit: 'spade', value: 'ace', color: 'black', valueWeight: 14},
+//     {cardSuit: '', value: 'joker', color: 'black', valueWeight: 15},
+//     {cardSuit: 'clubs', value: '9', color: 'black', valueWeight: 9},
+//     {cardSuit: 'diamond', value: '6', color: 'red', valueWeight: 6},
+//     {cardSuit: 'diamond', value: 'ace', color: 'red', valueWeight: 14},
+//     {cardSuit: 'spade', value: 'queen', color: 'black', valueWeight: 12},
+//     {cardSuit: '', value: 'joker', color: 'red', valueWeight: 15},
+//     {cardSuit: 'heart', value: '10', color: 'red', valueWeight: 10},
+//     {cardSuit: 'spade', value: '8', color: 'black', valueWeight: 8}
+// ]
 //
+// //--------------- valueWeight для визначення ваги масті, щоб можна було сортувати
 //
+// let spadeAce = deckOfCards.filter(object => object.cardSuit === 'spade' && object.value === 'ace')
+// console.log(spadeAce);
+//
+// let allSixNums = deckOfCards.filter(object => object.value === '6')
+// console.log(allSixNums);
+//
+// let allRedCards = deckOfCards.filter(object => object.color === 'red')
+// console.log(allRedCards);
+//
+// let allDiamondCards = deckOfCards.filter(object => object.cardSuit === 'diamond')
+// console.log(allDiamondCards);
+//
+// let filterAllClubs = deckOfCards.filter(object => object.cardSuit === 'clubs' && object.valueWeight >= 9)
+// console.log(filterAllClubs);
+
+
+
+
 // Додатково по reduce
 // Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
 // {
@@ -185,3 +224,26 @@
 //     hearts:[],
 //     clubs:[]
 // }
+
+
+
+
+//deckOfCards створений вище
+
+// let reduceDeckOfCards = deckOfCards.reduce((accumulator, card) => {
+//     if (card.cardSuit === 'spade'){
+//         accumulator.spades.push(card)
+//     }
+//     if (card.cardSuit === 'diamond'){
+//         accumulator.diamonds.push(card)
+//     }
+//     if (card.cardSuit === 'heart'){
+//         accumulator.hearts.push(card)
+//     }
+//     if (card.cardSuit === 'clubs'){
+//         accumulator.clubs.push(card)
+//     }
+//     return accumulator
+// }, {spades: [], diamonds: [], hearts: [], clubs: []})
+//
+// console.log(reduceDeckOfCards);
