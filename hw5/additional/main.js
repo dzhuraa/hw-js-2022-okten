@@ -98,14 +98,8 @@ console.log(numAB(3, 10));
 //   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
 
 
-changeElement = (arr, i) => {
-    let i2 = i
-    arr[i+1] = arr[i]
-    arr[i2] = arr[i2+1]
-    return arr
-}
 
-console.log(changeElement(array, 0));    //  array = [0, 10, 4, 5]
+
 
 
 // - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
