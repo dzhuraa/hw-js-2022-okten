@@ -46,23 +46,68 @@ console.log(biggestNumArr(array));
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 
 
+sumNum = (arr) => {
+    let sum = 0
+    for (const arrElement of arr) {
+        sum += arrElement
+    }
+    return sum
+}
+
+array = [0, 10, 4, 5]
 
 
 
+console.log(sumNum(array));
 
 
-
-//
 // - Дано натуральное число n. Выведите все числа от 1 до n.
+
+
+let num = 7
+
+for (let i = 1; i <= num; i++) {
+    console.log(i);
+}
+
+
 // - Даны два целых числа A и В . Выведите все числа от A до B включительно, в порядке возрастания, если A < B, или в порядке убывания в противном случае.
-//
-//
+
+numAB = (a, b) => {
+    let array = []
+    if (a < b) {
+        for (let i = a; i <= b; i++) {
+            array.push(i)
+        }
+    } else if (a > b) {
+        for (let i = a; i >= b; i--) {
+            array.push(i)
+        }
+    }
+    return array
+};
+
+
+console.log(numAB(3, 10));
+
+
 // -   функція Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
 //   EXAMPLE:
 //   foo([9,8,0,4], 0) // ==> [ 8, 9, 0, 4 ]
 //   foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
 //   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
-//
+
+
+changeElement = (arr, i) => {
+    let i2 = i
+    arr[i+1] = arr[i]
+    arr[i2] = arr[i2+1]
+    return arr
+}
+
+console.log(changeElement(array, 0));    //  array = [0, 10, 4, 5]
+
+
 // - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
 // Двожина масиву від 2 до 100
 // EXAMPLE:
